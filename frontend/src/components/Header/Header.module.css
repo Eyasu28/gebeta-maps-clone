@@ -1,0 +1,16 @@
+.header {
+}
+.header__nav {
+  height: inherit;
+}
+.header__nav ul {
+  list-style: none;
+  font-weight: 600;
+}
+/* .header__nav ul li {
+  font-weight: 600;
+} */
+
+.logo__image {
+  width: 30px;
+}

@@ -1,16 +1,40 @@
 .header {
+   /* color: #FFFFFF; */
+  /* background-color: #05050A; */
 }
 .header__nav {
   height: inherit;
 }
 .header__nav ul {
   list-style: none;
-  font-weight: 600;
 }
-/* .header__nav ul li {
-  font-weight: 600;
-} */
 
 .logo__image {
   width: 30px;
+}
+.signIn__button{
+  /* width : 10px; */
+  font-weight: 500;
+}
+.orange__links:hover {
+  color : #FFA500;
+}
+.getStarted__button{
+  border: 1px solid;
+}
+.getStarted__button:hover{
+  background-color: rgba(255,165,0,.2);
+  border-color:#FFA500;
+}
+.hidden__Links{
+  background-color: #1E293B;
+  position : absolute;
+  z-index: 2;
+  /* display: none; */
+}
+.hidden__Links>div{
+  width: 23%;
+}
+.hidden__Links>div:hover{
+  background-color: rgb(55 65 81/.9)
 }

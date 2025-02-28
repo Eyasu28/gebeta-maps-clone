@@ -1,7 +1,9 @@
 .banner{
     /* height: 600px;  */
-    padding-top: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
     position: relative;
+    
 }
 .banner__title{
 margin-top: 40px;
@@ -10,6 +12,7 @@ line-height: 60.8px;
 /* font-family: 'Sora', plus-jakarta-sans; */
 }
 .banner__description{
+    margin-top: 20px;
     font-size: 20px;
     color: #62677f;
 }

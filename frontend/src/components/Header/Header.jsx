@@ -8,7 +8,7 @@ import person from "../../assets/image/gebeta.app/GebetaMaps_-_Location_Solution
 const Header = () => {
   const [isActive, setIsActive] = useState(false)
   return (
-    <>
+    <div className={`fixed-top`}>
       <div
         className={`d-flex justify-content-between align-items-center px-4 py-3 ${classes.header}`}
       >
@@ -24,8 +24,10 @@ const Header = () => {
           <ul className={`d-flex mb-0 justify-content-evenly`}>
             <li
               className={`${classes.orange__links} ${classes.products} mx-3 py-3`}
-              onMouseEnter={() => { setIsActive(true); }}
-              onMouseUp={()=>setIsActive(false)}
+              onMouseEnter={() => {
+                setIsActive(true);
+              }}
+              onMouseUp={() => setIsActive(false)}
             >
               Products{" "}
               <span>
@@ -58,8 +60,12 @@ const Header = () => {
         </div>
       </div>
       {isActive && (
-        <div className={`d-flex justify-content-evenly py-4 ${classes.hidden__Links}`}
-        onMouseLeave={()=>{setIsActive(false);}}>
+        <div
+          className={`d-flex justify-content-evenly py-4 ${classes.hidden__Links}`}
+          onMouseLeave={() => {
+            setIsActive(false);
+          }}
+        >
           <div className={`p-3 rounded-3`}>
             <div className={`fw-bold mb-2`}>Geocoding</div>
             <small className={`opacity-50 fw-light`}>
@@ -87,7 +93,7 @@ const Header = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

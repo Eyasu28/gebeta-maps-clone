@@ -11,7 +11,7 @@ const Banner = () => {
           Simplified.
           {/* </h1> */}
         </div>
-        <div className={`mt-3 fw ${classes.banner__description}`}>
+        <div className={`fw ${classes.banner__description}`}>
           Advanced location technology for businesses,
           <br />
           developers, and logistics providers

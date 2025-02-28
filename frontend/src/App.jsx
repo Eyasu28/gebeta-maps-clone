@@ -1,16 +1,15 @@
-import './App.css'
-import Banner from './components/Banner/Banner'
-import Header from './components/Header/Header'
+import "./App.css";
+import Banner from "./components/Banner/Banner";
+import CarouselComponent from "./components/Carousel/CarouselComponent";
+import Header from "./components/Header/Header";
+import Home from "./Pages/Home/Home";
 
 function App() {
-
-
   return (
     <>
-      <Header />
-      <Banner />
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
